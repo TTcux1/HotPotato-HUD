@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "hotpotato-hud",
+  "version": "${version}",
+  "name": "HotPotato HUD",
+  "description": "Клиентский интерфейс для мини-игры «Горячая картошка»: таймер фитиля, держатели картошки, лента событий.",
+  "authors": ["TTcux"],
+  "contact": {
+    "sources": "https://github.com/TTcux1/HotPotato-HUD"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.hotpotato.hud.client.HotPotatoHudClient"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}"
+  }
+}
